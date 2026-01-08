@@ -1,35 +1,84 @@
 ---
-title: Home
-layout: home
+layout: default
+title: Alien Invasion: RPG Idle Space – Wiki
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Alien Invasion: RPG Idle Space Wiki
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+Welcome to the **unofficial community wiki** for  
+**Alien Invasion: RPG Idle Space**, a mobile idle RPG game.
 
-More specifically, the created site:
+This wiki focuses on **game mechanics, progression systems, resources, enemies, upgrades, and long-term strategy** – especially information that is **not clearly explained in-game**.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+---
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## 🚀 About the Game
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+**Alien Invasion: RPG Idle Space** is an offline-capable idle RPG where you control an alien organism that grows stronger by absorbing enemies, harvesting resources, and unlocking new zones.
 
-To get started with creating a site, simply:
+Key characteristics:
+- Idle / incremental progression
+- Offline progress
+- Multiple currencies and upgrade layers
+- Long-term grind with soft and hard progression walls
+- No official documentation or database
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+---
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+## 🎯 Purpose of This Wiki
 
-----
+This wiki exists to:
+- Document **game systems and mechanics**
+- Preserve **progression data** (costs, unlocks, scaling)
+- Help players **plan upgrades and avoid mistakes**
+- Provide reference tables instead of guesswork
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+This is **not**:
+- an official wiki
+- a news site
+- a monetized guide service
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+---
+
+## 🧠 What You’ll Find Here
+
+- Upgrade and building costs
+- Resource requirements and scaling
+- Area unlock conditions
+- Enemy types and drops
+- Progression milestones
+- Strategy notes for early, mid, and late game
+
+Content is based on **direct gameplay observation**, not speculation.
+
+---
+
+## 🛠 Status of the Wiki
+
+This wiki is **actively being built**.
+
+- Content will expand gradually
+- Some sections may be incomplete
+- Data accuracy improves over time
+
+If information is missing, it is usually because it can no longer be observed without restarting the game.
+
+---
+
+## 🤝 Contributions
+
+This wiki is primarily written and maintained by a single player.
+
+Corrections and missing data are welcome, but collaboration is optional and intentionally lightweight.
+
+---
+
+## ⚠ Disclaimer
+
+All trademarks and game content belong to their respective owners.  
+This wiki is a **fan-made, non-commercial project**.
+
+---
+
+*Last updated: {{ site.time | date: "%Y-%m-%d" }}*
