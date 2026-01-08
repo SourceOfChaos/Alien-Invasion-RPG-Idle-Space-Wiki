@@ -37,5 +37,5 @@ Secret Key drops are affected by:
 Secret Keys are used to upgrade:
 
 - Secret Mine  
- - Production  
- - Storage Capacity
+  - Production  
+  - Storage Capacity
