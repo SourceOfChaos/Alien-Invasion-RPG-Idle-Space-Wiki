@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Alien Invasion: RPG Idle Space – Wiki
+title: "Alien Invasion: RPG Idle Space – Wiki"
 nav_order: 1
 ---
 
