@@ -16,7 +16,9 @@ The Big Money Boss is the strongest boss encountered in the Winter Zone.
 
 ## Description
 
-The Big Money Boss wears a secret golden key around his neck. Without sufficient upgrades from [James’ Shop]({% link upgrade-facilities/james-shop.md %}), defeating him is impossible. Description taken from the Winter Bosses Letter gained on reaching Level 10.
+The Big Money Boss wears a secret golden key around his neck. Without sufficient upgrades from 
+<a href="{% link upgrade-facilities/james-shop.md %}">James’ Shop</a>, defeating him is impossible.  
+Description taken from the Winter Bosses Letter gained on reaching Level 10.
 
 ## Respawn
 
@@ -29,13 +31,15 @@ The Big Money Boss wears a secret golden key around his neck. Without sufficient
 
 Secret Key drops are affected by:
 
-- Double Resources upgrade from the [Evolution Shop]({% link upgrade-facilities/evolution-shop.md %})
-- Resources +X% upgrade purchased with Crystals in the [Premium Shop]({% link upgrade-facilities/premium-shop.md %})
+- Double Resources upgrade from the 
+<a href="{% link upgrade-facilities/evolution-shop.md %}">Evolution Shop</a>
+- Resources +X% upgrade purchased with Crystals in the 
+<a href="{% link upgrade-facilities/premium-shop.md %}">Premium Shop</a>
 
 ## Usage of Secret Keys
 
 Secret Keys are used to upgrade:
 
-- [Secret Mine]({% link resources/secret-mine.md %}) 
+- <a href="{% link resources/secret-mine.md %}">Secret Mine</a>
   - Production  
   - Storage Capacity
