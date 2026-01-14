@@ -11,9 +11,9 @@ The **Evolution Shop** provides permanent upgrades purchased with Essences.
 Each purchase grants **random upgrades** from the available pool.
 
 The required Essences are obtained from their corresponding mines:
-- [Green Essence Mine](resources/green_essence.md)
-- [Red Essence Mine](resources/red_essence.md)
-- [Purple Essence Mine](resources/purple_essence.md)
+- <a href="{% link resources/green_essence.md %}">Green Essence Mine</a>
+- <a href="{% link resources/red_essence.md %}">Red Essence Mine</a>
+- <a href="{% link resources/purple_essence.md %}">Purple Essence Mine</a>
 
 ---
 
@@ -25,7 +25,8 @@ The required Essences are obtained from their corresponding mines:
 - No discounts for bulk purchases (only faster progression)
 
 ### Price Caps (per upgrade)
-| Essence | Cost per Upgrade |
+
+| Essence | Cost per Upgrade (Capped) |
 |------|------------------|
 | Green | 80,000 |
 | Red | 24,000 |
@@ -37,23 +38,27 @@ The required Essences are obtained from their corresponding mines:
 
 For most upgrades:
 - Level 0 = 0
-- Level 100 = Final value
-- Level 99 = **~50% of final value**
-- Level 100 **doubles** the value compared to level 99
+- Each level increases the value by a **fixed step**
+- Level 1–99 scale linearly
+- Level 100 is calculated normally **and then multiplied by ×2**
+- Formula: value = level × step
+if level == 100 → value × 2
+This makes the final level a **true power spike**.
 
 ### Exceptions
 - **Double Resources**
 - **Double EXP**
 
-These upgrades are **capped at 100%**.
-- Level 99 ≈ 59.4%
-- Level 100 = 100%
-- No doubling at max level
+These upgrades:
+- Scale normally up to Level 99
+- Reach a **hard cap** at Level 100
+- Do **not** receive an additional ×2 multiplier beyond their maximum
 
 ### Rounding Behavior
-- Purple Essence mining upgrades increase by **0.75 per level**
-- Displayed values are **rounded down**
-- Example: last value before max shows **74.2**, not 74.25
+- Percentage values are **rounded down**
+- Example:
+- 99 × 0.75 % = 74.25 %
+- Displayed as **74.2 %**
 
 ---
 
@@ -62,40 +67,52 @@ These upgrades are **capped at 100%**.
 ## Catching Speed
 Extra catching speed.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | - |
-| 100/100 | 200K | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 1,000 |
+| 50 | 50,000 |
+| 99 | 99,000 |
+| 100 | 200,000 |
 
 ---
 
 ## Cargo
 Extra cargo capacity.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 10.0K | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 100 |
+| 50 | 5,000 |
+| 99 | 9,900 |
+| 100 | 20,000 |
 
 ---
 
 ## Hit Points
 Increase health.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 800 | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 8 |
+| 50 | 400 |
+| 99 | 792 |
+| 100 | 1,600 |
 
 ---
 
 ## Regeneration
 Hit points regenerated per second.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 16 | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 0.16 |
+| 50 | 8 |
+| 99 | 15.84 |
+| 100 | 32 |
 
 ---
 
@@ -104,51 +121,65 @@ Hit points regenerated per second.
 ## Catching Speed
 Extra catching speed.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 600K | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 3,000 |
+| 50 | 150,000 |
+| 99 | 297,000 |
+| 100 | 600,000 |
 
 ---
 
 ## Cargo
 Extra cargo capacity.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 14.0K | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 140 |
+| 50 | 7,000 |
+| 99 | 13,860 |
+| 100 | 28,000 |
 
 ---
 
 ## Hit Points
 Increase health.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 1.20K | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 12 |
+| 50 | 600 |
+| 99 | 1,188 |
+| 100 | 2,400 |
 
 ---
 
 ## Regeneration
 Hit points regenerated per second.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 24 | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 0.24 |
+| 50 | 12 |
+| 99 | 23.76 |
+| 100 | 48 |
 
 ---
 
 ## Extra Mining
-Extra Essence mining speed.
+Extra green/red/purple Essence mining speed.
 
-| Upgrade | Max Value |
-|-------|-----------|
-| Green Essence | +100% |
-| Red Essence | +100% |
-| Purple Essence | +100% |
+| Level | Value |
+|------|------:|
+| 0 | 0% |
+| 1 | 0.5% |
+| 50 | 25% |
+| 99 | 49.5% |
+| 100 | 100% |
 
 All follow identical scaling.
 
@@ -159,56 +190,65 @@ All follow identical scaling.
 ## Catching Speed
 Extra catching speed.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 1.60M | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0 |
+| 1 | 8,000 |
+| 50 | 400,000 |
+| 99 | 792,000 |
+| 100 | 1,600,000 |
 
 ---
 
 ## Extra Mining
-Extra Essence mining speed.
+Extra green/red/purple Essence mining speed.
 
-| Essence | Max Value |
-|-------|-----------|
-| Green | +150% |
-| Red | +150% |
-| Purple | +150% |
+| Level | Value |
+|------|------:|
+| 0 | 0% |
+| 1 | 0.75% |
+| 50 | 37.5% |
+| 99 | 74.2% |
+| 100 | 150% |
 
 ---
 
 ## Heat Resistance
 Extra heat resistance.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0 | – |
-| 100/100 | 400% | MAXED |
+| Level | Value |
+|------|------:|
+| 0 | 0% |
+| 1 | 2% |
+| 50 | 100% |
+| 99 | 198% |
+| 100 | 400% |
 
 ---
 
 ## Double Resources (Special Rule)
 Chance to receive double resources from humans.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0% | – |
-| 100/100 | 100% | MAXED |
-
-- Level 99 ≈ 59.4%
-- Value is **capped**, no doubling at max level
+| Level | Value |
+|------|------:|
+| 0 | 0% |
+| 1 | 0.6% |
+| 50 | 30% |
+| 99 | 59.4% |
+| 100 | 100% |
 
 ---
 
 ## Double EXP (Special Rule)
 Chance to receive double EXP from humans.
 
-| Level | Value | Cost |
-|------|------|------|
-| 0/100 | 0% | – |
-| 100/100 | 100% | MAXED |
-
-- Same capped behavior as Double Resources
+| Level | Value |
+|------|------:|
+| 0 | 0% |
+| 1 | 0.6% |
+| 50 | 30% |
+| 99 | 59.4% |
+| 100 | 100% |
 
 ---
 
