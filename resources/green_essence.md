@@ -2,7 +2,7 @@
 layout: default
 title: Green Essence Mine
 parent: Resources
-nav_order: 3
+nav_order: 2
 ---
 
 # Green Essence Mine
