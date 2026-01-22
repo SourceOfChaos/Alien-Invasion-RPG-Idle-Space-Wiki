@@ -10,7 +10,7 @@ Bosses act as **hard progression gates** and must be defeated to unlock further 
 Some bosses are **one-time quest bosses**, while others are **area bosses** that guard specific regions.
 
 This page provides an overview of all known bosses and explains the core mechanics behind boss fights.
-
+  
 ---
 
 ## Boss Types
