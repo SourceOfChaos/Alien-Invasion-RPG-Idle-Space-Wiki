@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1400 2900" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+.room { fill:#2b2f3a; stroke:#6c8cff; stroke-width:4; }
+.gate { fill:#1f8f6a; stroke:#00ffb3; stroke-width:3; }
+.poi  { fill:#c94cff; stroke:#ffffff; stroke-width:3; }
+.label { fill:white; font-size:32px; font-family:Arial, sans-serif; }
+</style>
+
+<!-- CENTRAL ROOM -->
+<polygon class="room" points="
+397,779
+95,780
+73,1472
+966,1472
+981,2041
+1123,2063
+1318,2062
+1316,421
+764,432
+505,674
+504,1023
+394,1021" />
+<text class="label" x="600" y="1100">Central Room</text>
+
+<!-- MISSION ROOM -->
+<polygon class="room" points="
+508,2024
+823,2024
+819,1564
+514,1562" />
+<text class="label" x="560" y="1850">Mission Room</text>
+
+<!-- KUSTOV NORTH -->
+<polygon class="room" points="
+66,1533
+435,1541
+429,2029
+417,2202
+963,2200
+964,2342
+1029,2340
+1034,2729
+966,2729
+965,2851
+2,2850
+-1,2199
+49,2200" />
+<text class="label" x="150" y="2300">Kustov North</text>
+
+<!-- BEGINNING ROOM -->
+<polygon class="room" points="
+502,1737
+488,2686
+1315,2685
+1317,1738" />
+<text class="label" x="650" y="2300">Beginning Room</text>
+
+<!-- KUSTOV FARM -->
+<circle class="poi" cx="424" cy="935" r="108" />
+<text class="label" x="350" y="900">Kustov Farm</text>
+
+<!-- QUEST SPOT -->
+<circle class="poi" cx="806" cy="121" r="89" />
+<text class="label" x="700" y="100">Quest Spot</text>
+
+<!-- GATES -->
+
+<polygon class="gate" points="
+438,1564
+514,1565
+508,2025
+429,2024" />
+
+<polygon class="gate" points="
+74,1476
+70,1541
+437,1539
+437,1479" />
+
+<polygon class="gate" points="
+1124,2126
+1124,2063
+1316,2062
+1316,2123" />
+
+<polygon class="gate" points="
+1028,2343
+1035,2731
+1101,2732
+1095,2342" />
+
+<polygon class="gate" points="
+504,674
+761,434
+706,402
+480,610" />
+
+</svg>
