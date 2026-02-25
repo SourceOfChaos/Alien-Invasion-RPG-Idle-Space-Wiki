@@ -57,13 +57,13 @@
 1317,1738" />
 <text class="label" x="650" y="2300">Beginning Room</text>
 
-<!-- KUSTOV FARM -->
-<circle class="poi" cx="424" cy="935" r="108" />
-<text class="label" x="350" y="900">Kustov Farm</text>
+<!-- KUSTOV FARM (tiefer gesetzt) -->
+<circle class="poi" cx="424" cy="1835" r="108" />
+<text class="label" x="330" y="1800">Kustov Farm</text>
 
-<!-- QUEST SPOT -->
-<circle class="poi" cx="806" cy="121" r="89" />
-<text class="label" x="700" y="100">Quest Spot</text>
+<!-- QUEST SPOT (deutlich tiefer gesetzt) -->
+<circle class="poi" cx="806" cy="621" r="89" />
+<text class="label" x="690" y="600">Quest Spot</text>
 
 <!-- GATES -->
 
