@@ -1,4 +1,5 @@
 ---
+layout: default
 title: World Map
 nav_order: 1
 ---
